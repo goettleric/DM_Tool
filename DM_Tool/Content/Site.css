@@ -230,13 +230,13 @@ div.container.body-content p {
 
 div.container.body-content p a,
 table.table tbody tr td a
- {
+{
     color:white;
 }
 
 div.container.body-content p a:hover,
 table.table tbody tr td a:hover
- {
+{
     color: red;
 }
 
