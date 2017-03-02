@@ -13,27 +13,27 @@
         <form id="masterForm">
             @Html.Partial("_LoginPartial")
             <header>
-                <img src="~/Images/d20Logo.jpg"/>
+                <img src="~/Images/d20Logo.jpg" />
                 <h1 id="mainTitle">Arctic Birb DM Tool</h1>
             </header>
-                <nav>
-                    <ul>
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Player Tool", "Index", "Players")</li>
-                        <li>@Html.ActionLink("Monster Tool", "Index", "Monsters")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        <li>@Html.ActionLink("Behold!", "About", "Home")</li>
-                    </ul>
-                </nav>
+            <nav>
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Player Tool", "Index", "Players")</li>
+                    <li>@Html.ActionLink("Monster Tool", "Index", "Monsters")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Behold!", "About", "Home")</li>
+                </ul>
+            </nav>
         </form>
+
+        <div class="container body-content">
+            @RenderBody()
+        </div>
         <footer>
             <p>&copy; @DateTime.Now.Year - DM Tool, Team Artic-Birb</p>
         </footer>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-    </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
