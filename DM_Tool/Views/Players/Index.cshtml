@@ -1,0 +1,105 @@
+﻿@model IEnumerable<DM_Tool.Models.Players>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.race)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.level)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hitpoints)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accuracy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strength)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dexterity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.concentration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intelligence)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.wisdom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charisma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.initiative)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.speed)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.race)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.level)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hitpoints)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accuracy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strength)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dexterity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.concentration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intelligence)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.wisdom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.charisma)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.initiative)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.speed)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.playerID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.playerID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.playerID })
+        </td>
+    </tr>
+}
+
+</table>

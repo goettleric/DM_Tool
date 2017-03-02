@@ -1,0 +1,51 @@
+﻿@model IEnumerable<DM_Tool.Models.Monsters>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.monsterName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.monsterHP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.monsterDamage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.experience)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.monsterName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.monsterHP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.monsterDamage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.experience)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.monsterID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.monsterID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.monsterID })
+        </td>
+    </tr>
+}
+
+</table>

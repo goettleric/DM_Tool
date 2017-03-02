@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM_Tool", "DM_Tool\DM_Tool.csproj", "{DF5E5A8F-4591-42F3-B3E4-42677B21E3BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM_Tool.Tests", "DM_Tool.Tests\DM_Tool.Tests.csproj", "{CC8BE805-5AAF-4AE9-A7C9-4DC2ED66797D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF5E5A8F-4591-42F3-B3E4-42677B21E3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5E5A8F-4591-42F3-B3E4-42677B21E3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5E5A8F-4591-42F3-B3E4-42677B21E3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5E5A8F-4591-42F3-B3E4-42677B21E3BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8BE805-5AAF-4AE9-A7C9-4DC2ED66797D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8BE805-5AAF-4AE9-A7C9-4DC2ED66797D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8BE805-5AAF-4AE9-A7C9-4DC2ED66797D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8BE805-5AAF-4AE9-A7C9-4DC2ED66797D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<form id="contactContent">
+    <label id="lblEmail">Email:</label>
+    <input id="textEmail" runat="server" type="email" required="required" placeholder="abc@mail.com" pattern=""/>
+    <br /><br /><br />
+    <label id="lblRetypeEmail">Retype Email:</label>
+    <input id="textRetypeEmail" runat="server" type="email" required="required" placeholder="abc@mail.com" pattern="" />
+    <br /><br /><br />
+    <label id="lblSubject">Subject:</label>
+    <input id="txtSubject" type="text" required="required" placeholder="name"/>
+    <br /><br /><br />
+    <label id="lblMessage">Message:</label>
+    <textarea name="txtMessage"rows="10" cols="50" maxlength="250" spellcheck="true">Your Message</textarea>
+
+
+    <input id="btnSend" type="button" value="Send" />
+
+
+</form>

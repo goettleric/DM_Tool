@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/Site.css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div id="wrapper">
+        <form id="masterForm">
+            @Html.Partial("_LoginPartial")
+            <header>
+                <img src="~/Images/d20Logo.jpg"/>
+                <h1 id="mainTitle">Arctic Birb DM Tool</h1>
+            </header>
+                <nav>
+                    <ul>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Player Tool", "Index", "Players")</li>
+                        <li>@Html.ActionLink("Monster Tool", "Index", "Monsters")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </nav>
+        </form>
+        <footer>
+            <p>&copy; @DateTime.Now.Year - DM Tool, Team Artic-Birb</p>
+        </footer>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

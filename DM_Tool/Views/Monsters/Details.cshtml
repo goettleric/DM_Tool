@@ -1,0 +1,50 @@
+﻿@model DM_Tool.Models.Monsters
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Monsters</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.monsterName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monsterName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monsterHP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monsterHP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monsterDamage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monsterDamage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.experience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.experience)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.monsterID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
