@@ -35,6 +35,10 @@ header img {
     margin-left: 10px;
 }
 
+h2 {
+    color:white;
+    text-align:center;
+}
 #mainTitle {
     font-weight: 700;
     font-size: 48px;
@@ -97,13 +101,14 @@ img {
 }
 
 footer {
-     position:fixed;
+     padding-top: 20px;
      left: 0px;
      bottom: 10px;
      height: 50px;
      width: 100%;
     color: #fff;
     text-align: center;
+    
 }
 
 footer p {
@@ -182,30 +187,64 @@ Tools Styles
     text-align: center;
 }
 
-#playerDisplay {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background-color: white;
-    border-radius: 15px;
-    opacity: .8;
-    box-shadow: 1px 1px 5px black;
-    float: left;
-    padding: 10px;
-}
-
+#playerDisplay,
 #monsterDisplay {
     position: relative;
-    width: 300px;
-    height: 200px;
+    max-width: 35rem;
+    margin: auto;
+    height: 700px;
     background-color: white;
     border-radius: 15px;
     opacity: .8;
     box-shadow: 1px 1px 5px black;
-    float: left;
-    top: 0px;
-    left: 0px;
-    padding: 10px;
+    padding: 40px;
+}
+
+#playerDisplay h4,
+#monsterDisplay h4 {
+    text-align:center;
+    font-size: 23px;
+}
+#monsterDisplay {
+    height: 300px;
+}
+
+span.field-validation-error.text-danger
+{
+    color: red;
+}
+
+#playerShow {
+    position: relative;
+    width:60%;
+    margin: auto;
+    height: 1500px;
+    background-image:url('../Images/CharacterSheet.JPG');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+div.container.body-content p {
+    text-align:center;
+    font-size: 20px;
+}
+
+div.container.body-content p a,
+table.table tbody tr td a
+ {
+    color:white;
+}
+
+div.container.body-content p a:hover,
+table.table tbody tr td a:hover
+ {
+    color: red;
+}
+
+table.table {
+    width:90%;
+    margin: auto;
+    color:white;
+    text-align:center;
 }
 
 #dieSimulator {
@@ -348,12 +387,11 @@ Contact Styles
     height: 490px;
     background-color: white;
     font-weight: 600;
-    margin-left: auto;
-    margin-right: auto;
-    top: 25px;
+    margin: auto;
     border-radius: 15px;
     opacity: .8;
     box-shadow: 1px 1px 5px black;
+    padding: 10px;
 }
 
 #contactInner {
@@ -389,6 +427,7 @@ Behold! Styles
     width: 970px;
     max-width: 100%;
     height: auto;
+
 }
 
 #beholdContent img {

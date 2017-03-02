@@ -22,17 +22,17 @@
                         <li>@Html.ActionLink("Player Tool", "Index", "Players")</li>
                         <li>@Html.ActionLink("Monster Tool", "Index", "Monsters")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Behold", "About","Home")</li>
                     </ul>
                 </nav>
         </form>
-        <footer>
-            <p>&copy; @DateTime.Now.Year - DM Tool, Team Artic-Birb</p>
-        </footer>
+        <div class="container body-content">
+            @RenderBody()
+        </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-    </div>
-
+    <footer>
+        <p>&copy; @DateTime.Now.Year - DM Tool, Team Artic-Birb</p>
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

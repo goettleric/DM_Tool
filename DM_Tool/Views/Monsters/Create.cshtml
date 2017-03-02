@@ -11,7 +11,7 @@
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
+    <div id="monsterDisplay">
         <h4>Monsters</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })

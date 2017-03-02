@@ -198,6 +198,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\beholder.jpg" />
     <Content Include="Images\bgTexture.jpg" />
+    <Content Include="Images\CharacterSheet.JPG" />
     <Content Include="Images\d10.jpg" />
     <Content Include="Images\d12.png" />
     <Content Include="Images\d20.jpg" />
