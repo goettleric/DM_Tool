@@ -1,8 +1,7 @@
 namespace DM_Tool.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class InitialCreate : DbMigration
     {
         public override void Up()
@@ -37,6 +36,7 @@ namespace DM_Tool.Migrations
                         charisma = c.Int(nullable: false),
                         initiative = c.String(nullable: false, maxLength: 10),
                         speed = c.String(nullable: false, maxLength: 10),
+                        
                     })
                 .PrimaryKey(t => t.playerID);
             

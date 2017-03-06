@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
-
+﻿using System.ComponentModel.DataAnnotations;
 namespace DM_Tool.Models
 {
-    public class Players
+    public class Players : GMToolDB_Context
     {
         [Key]
         public int playerID { get; set; }
