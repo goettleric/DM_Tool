@@ -124,7 +124,7 @@ Home Styles
 #homeContent {
     position: relative;
     width: 640px;
-    height: 330px;
+    height: auto;
     background-color: white;
     font-weight: 600;
     margin-left: auto;
@@ -445,4 +445,34 @@ Behold! Styles
                  10px 10px 3px black,
                  10px 10px 20px purple;
 
+}
+
+#resourceLinks {
+   color: black; 
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 20px;
+   display: block;
+   padding-bottom: 20px;
+  
+}
+
+#resourceLinks a {
+   color: black;
+   text-decoration: none;
+}
+
+#resourceLinks a:hover {
+    color: white;
+    text-shadow: 1px 1px 1px black,
+                 3px 1px 3px black;
+                 
+}
+
+#resourceLinks li {
+   list-style: none;
+}
+
+#resourceLinks h3 {
+   font-size: 30px;
+   text-align: center;
 }
