@@ -131,9 +131,10 @@ img {
 }
 
 footer {
+    bottom: 20rem;
      padding-top: 20px;
      left: 0px;
-     bottom: 10px;
+     bottom: 2rem;
      height: 50px;
      width: 100%;
     color: #fff;
