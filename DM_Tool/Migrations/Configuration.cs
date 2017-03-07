@@ -1,32 +1,47 @@
 namespace DM_Tool.Migrations
 {
-    using System;
-    using System.Data.Entity;
+    using Models;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DM_Tool.Models.GMToolDB_Context>
+    internal sealed class Configuration : DbMigrationsConfiguration<GMToolDB_Context>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationDataLossAllowed = true;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "DM_Tool.Models.GMToolDB_Context";
         }
 
-        protected override void Seed(DM_Tool.Models.GMToolDB_Context context)
+        protected override void Seed(GMToolDB_Context context)
         {
-            //  This method will be called after migrating to the latest version.
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            context.Players.AddOrUpdate(
+                new Players()
+                {
+                    name = "Rod",
+                    race = "human",
+                    level = 1,
+                    hitpoints = 3,
+                    accuracy = 4,
+                    strength = 5,
+                    dexterity = 6,
+                    concentration = 7,
+                    intelligence = 5,
+                    wisdom = 9,
+                    charisma = 4,
+                    initiative = "5fel",
+                    speed = "5ft/sec",
+                });
+
+            context.Monsters.AddOrUpdate(
+                new Monsters()
+                {
+                    monsterName = "Thor",
+                    monsterHP = 500,
+                    monsterDamage = "6hppersec",
+                    experience = 600,
+
+                });
         }
     }
 }
