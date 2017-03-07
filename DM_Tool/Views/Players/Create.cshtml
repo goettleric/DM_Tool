@@ -11,7 +11,7 @@
 {
     @Html.AntiForgeryToken()
     
-    <div id="playerDisplay">
+    <div id="playerDisplay" onload="RandomNameGen.init()">
         <h4>Player Creation</h4>
       
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -127,10 +127,14 @@
     </div>
 }
 
+    <input type="submit" value="Generate Random Name" class="btn btn-default" id="randomNameButton" />
+    <p id="randomName">NAME:</p>
+
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/randNameGen.js")
 }
