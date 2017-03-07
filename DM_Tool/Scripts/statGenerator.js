@@ -8,6 +8,7 @@
 
 var arrayOfStats = []; // Array that holds the final added rolls used to assign to character stats
 var rollArray = []; // Array that holds the random rolls that determine the final stat number
+var rollHistory = [[]];
 var sidesOnDie = 6;
 var totalStats = 6;
 var rollsPerStat = 4;
@@ -40,6 +41,10 @@ document.getElementById('testButton').addEventListener('click', function () {
     for (var i = 0; i < arrayOfStats.length; i++) {
         document.getElementById(i.toString()).innerHTML = arrayOfStats[i].toString();
     }
+
+    // Roll history
+    rollHistory.push(arrayOfStats);
+    console.log(rollHistory.toString() + "\n");
 
     // Reset arrays
     rollArray = [];
