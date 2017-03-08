@@ -358,8 +358,8 @@ table.table {
 
 #randomNameButton {
     position: relative;
-    left: 670px;
-    top: 45px;
+    left: 34rem;
+    top: 3rem;
 }
 
 /*//////////////// 
@@ -485,7 +485,6 @@ Behold! Styles
     text-shadow: 1px 1px 5px black,
                  10px 10px 3px black,
                  10px 10px 20px purple;
-
 }
 
 #resourceLinks {
