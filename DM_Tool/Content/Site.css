@@ -352,6 +352,16 @@ table.table {
     font-size: 30px;
 }
 
+#randomName {
+    color: white;
+}
+
+#randomNameButton {
+    position: relative;
+    left: 670px;
+    top: 45px;
+}
+
 /*//////////////// 
     
 Update Styles 
