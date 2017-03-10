@@ -21,6 +21,7 @@ namespace DM_Tool.Migrations
                 {
                     name = "Rod",
                     race = "human",
+                    playerClass= "rogue",
                     level = 1,
                     hitpoints = 3,
                     accuracy = 4,

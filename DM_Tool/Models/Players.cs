@@ -12,6 +12,9 @@ namespace DM_Tool.Models
         [StringLength(25, MinimumLength = 2)]
         [Required]
         public string race { get; set; }
+        [StringLength(25, MinimumLength = 2)]
+        [Required]
+        public string playerClass { get; set; }
         [Range(1,100)]
         [Required]
         public int level { get; set; }

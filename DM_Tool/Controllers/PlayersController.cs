@@ -43,7 +43,7 @@ namespace DM_Tool.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "playerID,name,race,level,hitpoints,accuracy,strength,dexterity,concentration,intelligence,wisdom,charisma,initiative,speed")] Players players)
+        public ActionResult Create([Bind(Include = "playerID,name,race,playerClass,level,hitpoints,accuracy,strength,dexterity,concentration,intelligence,wisdom,charisma,initiative,speed")] Players players)
         {
             if (ModelState.IsValid)
             {
@@ -75,7 +75,7 @@ namespace DM_Tool.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "playerID,name,race,level,hitpoints,accuracy,strength,dexterity,concentration,intelligence,wisdom,charisma,initiative,speed")] Players players)
+        public ActionResult Edit([Bind(Include = "playerID,name,race,playerClass,level,hitpoints,accuracy,strength,dexterity,concentration,intelligence,wisdom,charisma,initiative,speed")] Players players)
         {
             if (ModelState.IsValid)
             {
