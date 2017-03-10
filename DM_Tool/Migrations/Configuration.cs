@@ -1,5 +1,6 @@
 namespace DM_Tool.Migrations
 {
+    using DAL;
     using Models;
     using System.Data.Entity.Migrations;
 

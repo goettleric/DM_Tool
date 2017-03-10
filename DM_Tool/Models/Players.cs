@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using DM_Tool.DAL;
+using System.ComponentModel.DataAnnotations;
 namespace DM_Tool.Models
 {
     public class Players : GMToolDB_Context
