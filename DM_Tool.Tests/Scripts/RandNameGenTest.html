@@ -12,19 +12,12 @@
     <script src="https://code.jquery.com/qunit/qunit-2.2.0.js"></script>
     <script src="randNameGen.js"></script>
     <script>
-        QUnit.test("equal test", function (assert) {
+        QUnit.test("Random Name Gen", function (assert) {
             var nameListsLength = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
             var randomNumberTest = RandomNameGen.randomRange(1, nameListsLength.length);
             
 
-            assert.deepEqual(randomNumberTest < 10 && randomNumberTest > -1, randomNumberTest < 10 && randomNumberTest > -1, "Equal");
-        });
-
-        QUnit.test("equal test", function (assert) {
-            var firstName = RandomNameGen.displayRandomName();
-
-            firstName
-            assert.ok(firstName, RandomNameGen.displayRandomName(), "Equal");
+            assert.deepEqual(randomNumberTest < 10 && randomNumberTest > -1, randomNumberTest < 10 && randomNumberTest > -1, "RandomNameGen");
         });
     </script>
 </body>
